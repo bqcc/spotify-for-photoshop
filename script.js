@@ -4,8 +4,7 @@
   const text = document.querySelector(".codetext");
   const btn = document.querySelector(".btn");
 
-  // let code = window.location.pathname.split("?code=")[1];
-  let code = window.location.pathname.split("inde")[1].split("#&scope=")[0];
+  const code = window.location.pathname.split("inde")[1].split("#&scope=")[0];
 
   if (code.includes("error")) return (text.textContent = "Error");
 
