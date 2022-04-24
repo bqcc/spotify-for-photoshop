@@ -12,7 +12,7 @@
 
   btn.addEventListener("click", async () => {
     try {
-      navigator.clipboard.writeText(code);
+      await navigator.clipboard.writeText(code);
       btn.textContent = "Copied";
     } catch (e) {
       btn.textContent = "Error";
